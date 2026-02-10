@@ -1,0 +1,5 @@
+allowlist_domains:
+  - example.com
+workspace_root: "."
+max_file_bytes: 2000000
+max_steps: 25
