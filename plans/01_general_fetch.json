@@ -1,0 +1,19 @@
+{
+  "name": "general_fetch",
+  "objective": "Fetch an allowlisted URL and write a short note to disk (live mode writes).",
+  "steps": [
+    {
+      "skill": "http.fetch",
+      "args": {
+        "url": "https://example.com"
+      }
+    },
+    {
+      "skill": "files.write",
+      "args": {
+        "path": "hydra_output/note.txt",
+        "content": "HYDRA Z ran http.fetch and created this note."
+      }
+    }
+  ]
+}

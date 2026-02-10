@@ -1,0 +1,12 @@
+{
+  "name": "security_osv_deps_scan",
+  "objective": "Scan dependency manifest via OSV (live mode queries OSV; dry-run/shadow skip).",
+  "steps": [
+    {
+      "skill": "sec.osv_deps_scan",
+      "args": {
+        "path": "requirements.txt"
+      }
+    }
+  ]
+}
